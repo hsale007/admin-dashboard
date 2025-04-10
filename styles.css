@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Funnel Sans";
+  src: url(fonts/FunnelSans-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sour Gummy";
+  src: url(fonts/SourGummy-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
