@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="dashboard">
-      <header>
+      <header class="header">
         <div class="nav-bar">
           <label for="search_dash"><span>icon</span></label>
           <input type="search" name="search_dash" id="search_dash" />
@@ -15,6 +16,7 @@
         <div class="user"></div>
       </header>
       <div class="sidebar">
+        <h1>Dashboard</h1>
         <ul>
           <li class="sidebar-item">Home</li>
           <li class="sidebar-item">Profile</li>
@@ -29,112 +31,187 @@
       </div>
       <div class="content">
         <div class="projects">
-          <h2>Projects</h2>
-          <div class="card">
-            <h4>Super Cool Project</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-              laboriosam harum necessitatibus expedita, atque blanditiis dolor
-              laudantium qui perspiciatis ut dolores dicta reprehenderit amet
-              impedit vel error asperiores accusantium est?
-            </p>
-          </div>
-          <div class="card">
-            <h4>Less Cool Project</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-              laboriosam harum necessitatibus expedita, atque blanditiis dolor
-              laudantium qui perspiciatis ut dolores dicta reprehenderit amet
-              impedit vel error asperiores accusantium est?
-            </p>
-          </div>
-          <div class="card">
-            <h4>Impossible App</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-              laboriosam harum necessitatibus expedita, atque blanditiis dolor
-              laudantium qui perspiciatis ut dolores dicta reprehenderit amet
-              impedit vel error asperiores accusantium est?
-            </p>
-          </div>
-          <div class="card">
-            <h4>Easy Peasy App</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, distinctio quam. Temporibus delectus quam vel
-              inventore rem fuga quo, harum saepe mollitia dolores nihil ex
-              dignissimos aspernatur error ratione voluptate? Debitis sunt dolor
-              esse? Quod dignissimos porro perspiciatis. Eum cupiditate autem
-              magni quibusdam eos ea dignissimos. Doloremque praesentium quis
-              vel.
-            </p>
-          </div>
-          <div class="card">
-            <h4>Ad block</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              sapiente ut itaque dolore, voluptatibus molestias harum asperiores
-              iure sint fugit?
-            </p>
-          </div>
-          <div class="card">
-            <h4>Money Maker</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptas, tenetur.
-            </p>
+          <h1>Your Projects</h1>
+          <div class="project-cards">
+            <div class="card">
+              <h2>Super Cool Project</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                laboriosam harum necessitatibus expedita, atque blanditiis dolor
+                laudantium qui perspiciatis ut dolores dicta reprehenderit amet
+                impedit vel error asperiores accusantium est?
+              </p>
+            </div>
+            <div class="card">
+              <h2>Less Cool Project</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                laboriosam harum necessitatibus expedita, atque blanditiis dolor
+                laudantium qui perspiciatis ut dolores dicta reprehenderit amet
+                impedit vel error asperiores accusantium est?
+              </p>
+            </div>
+            <div class="card">
+              <h2>Impossible App</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                molestiae nihil quasi nemo quae cumque quas expedita eaque
+                inventore. Dolore, fugit! Atque laudantium debitis nemo quis
+                tempora, nulla exercitationem quidem ipsam, facilis, et
+                doloremque obcaecati! Itaque nisi quis harum voluptates, ab
+                nobis fuga beatae architecto! Quisquam porro ullam, doloribus
+                iste, numquam accusantium perferendis consequatur necessitatibus
+                eligendi impedit facere deserunt quam nam libero eum tempore!
+                Est cupiditate, qui voluptatum nam sed officiis molestias unde
+                officia aut error voluptatibus temporibus deserunt placeat
+                voluptate exercitationem ducimus inventore quod odit eum eos
+                quis, nobis vitae fuga ut? Quisquam at voluptatem nobis sed
+                harum animi! Necessitatibus iure illo facere, maiores
+                repudiandae omnis tenetur! Eius cum sapiente dolorem pariatur
+                odit. Odio et hic repellendus aperiam aliquid laudantium,
+                doloremque ea provident, obcaecati debitis suscipit incidunt
+                nemo sequi. Eveniet ad consequatur et unde repellendus repellat,
+                tenetur illum quibusdam quam natus error cumque a? Voluptas,
+                praesentium reprehenderit accusantium animi officiis iste alias,
+                dignissimos incidunt eum quia atque voluptatum quibusdam
+                voluptatem inventore. Soluta similique praesentium rem! Harum
+                voluptate itaque, facilis exercitationem aspernatur accusamus
+                natus facere perferendis! Temporibus sunt iste amet repellendus
+                magnam dolorum eligendi ut iure officia quae optio similique
+                quisquam, maiores explicabo cum officiis, enim harum repudiandae
+                consectetur voluptatem veniam! Adipisci harum quaerat, maiores
+                maxime dignissimos reprehenderit quo quidem laboriosam rem omnis
+                sit, quae beatae! Natus unde corrupti rem corporis cumque odit
+                delectus maiores, dicta magni, quo nobis praesentium quas
+                tenetur. Laudantium earum rerum nisi at molestias nostrum
+                voluptate non eligendi sequi ducimus quae eum delectus impedit
+                velit, illum perferendis ex? Vitae repellendus cum et mollitia
+                iusto aliquid minima? Facere excepturi reprehenderit molestias
+                exercitationem maxime commodi optio alias. Quam nihil veritatis
+                architecto? Perspiciatis quibusdam eaque tempora voluptatem
+                obcaecati pariatur iusto excepturi id minima nihil explicabo
+                vero sint accusantium voluptatibus neque veniam, aspernatur
+                magni ratione quos, accusamus omnis ad! Aspernatur in, nobis
+                officia iste libero quisquam quos aliquam iusto debitis voluptas
+                suscipit incidunt non natus consectetur doloremque aperiam sunt,
+                dolore neque molestiae nostrum! Iusto sunt explicabo pariatur
+                provident maxime dolorum, impedit incidunt aut, aspernatur
+                repellat, veritatis corporis magni tempora asperiores! Rerum
+                sequi perspiciatis tenetur maiores. Quasi, ex quis. Modi qui
+                perferendis doloremque quisquam voluptatem sequi veniam
+                consequuntur totam est. Magnam quasi alias ullam dignissimos
+                aperiam, dolores temporibus, unde ut exercitationem, accusantium
+                earum repellat molestiae sed. Consequatur laborum repellendus
+                commodi possimus deserunt ut, omnis esse quis dolorum in eum
+                quaerat voluptate! Quaerat quidem numquam dolorem sint ducimus
+                labore illum, exercitationem minima necessitatibus rem at soluta
+                provident nostrum placeat, praesentium odit accusantium et earum
+                ea maiores tempore saepe alias sequi. Expedita fuga commodi hic,
+                voluptas illum modi eum odio qui tenetur aperiam vel, quidem
+                omnis exercitationem tempore, assumenda eius? Deserunt veniam
+                officiis quos excepturi voluptas hic ex mollitia ipsa. Rerum sed
+                soluta molestiae earum nam odio saepe error. Distinctio nesciunt
+                repellendus nulla placeat veniam ipsam, sunt repudiandae eius
+                ducimus at aliquid non nisi ad. Pariatur, fugit. Reiciendis
+                saepe voluptatum maiores id quia, qui quibusdam dolore
+                repudiandae nesciunt laudantium iusto, blanditiis alias vitae!
+                Quas ratione excepturi, repellendus cum quia similique
+                laudantium velit aut?
+              </p>
+            </div>
+            <div class="card">
+              <h2>Easy Peasy App</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, distinctio quam. Temporibus delectus quam vel
+                inventore rem fuga quo, harum saepe mollitia dolores nihil ex
+                dignissimos aspernatur error ratione voluptate? Debitis sunt
+                dolor esse? Quod dignissimos porro perspiciatis. Eum cupiditate
+                autem magni quibusdam eos ea dignissimos. Doloremque praesentium
+                quis vel.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Ad block</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis sapiente ut itaque dolore, voluptatibus molestias harum
+                asperiores iure sint fugit?
+              </p>
+            </div>
+            <div class="card">
+              <h2>Money Maker</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas, tenetur.
+              </p>
+            </div>
           </div>
         </div>
         <div class="annoucments">
-          <h2>Annoucments</h2>
-          <div class="card">
-            <h4>Site Maintence</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, ab
-              iste. Minima est impedit qui eaque architecto ut ea, iure
-              dignissimos porro, optio illo doloribus consequuntur laborum amet,
-              quod aliquid.
-            </p>
-          </div>
-          <div class="card">
-            <h4>Community Share Day</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, ab
-              iste. Minima est impedit qui eaque architecto ut ea, iure
-              dignissimos porro, optio illo doloribus consequuntur laborum amet,
-              quod aliquid.
-            </p>
-          </div>
-          <div class="card">
-            <h4>Updated Privacy Policy</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, ab
-              iste. Minima est impedit qui eaque architecto ut ea, iure
-              dignissimos porro, optio illo doloribus consequuntur laborum amet,
-              quod aliquid.
-            </p>
+          <h1>Annoucments</h1>
+          <div class="annoucments-card">
+            <div class="annoucment-card">
+              <h2>Site Maintence</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                laboriosam harum necessitatibus expedita, atque blanditiis dolor
+                laudantium qui perspiciatis ut dolores dicta reprehenderit amet
+                impedit vel error asperiores accusantium est?
+              </p>
+            </div>
+            <div class="annoucment-card">
+              <h2>Community Share Day</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                ab iste. Minima est impedit qui eaque architecto ut ea, iure
+                dignissimos porro, optio illo doloribus consequuntur laborum
+                amet, quod aliquid.
+              </p>
+            </div>
+            <div class="annoucment-card">
+              <h2>Updated Privacy Policy</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                ab iste. Minima est impedit qui eaque architecto ut ea, iure
+                dignissimos porro, optio illo doloribus consequuntur laborum
+                amet, quod aliquid.
+              </p>
+            </div>
           </div>
         </div>
         <div class="trending">
-          <h2>Trending</h2>
-          <ul>
-            <li>
+          <h1>Trending</h1>
+          <div class="trending-card">
+            <div class="card">
+              <img src="images/cat.svg" alt="Cat Profile Picture" />
               <p>@teagan</p>
               <p>World Peace Builder</p>
-            </li>
-            <li>
-              <p>@morgan</p>
-              <p>Super Cool Project</p>
-            </li>
-            <li>
+            </div>
+            <div class="card">
+              <img
+                src="images/basketball.svg"
+                alt="Basketball Profile Picture"
+              />
+              <div class="info">
+                <p>@morgan</p>
+                <p>Super Cool Project</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/unicorn.svg" alt="unicorn Profile Picture" />
               <p>@kendall</p>
               <p>Life Changing App</p>
-            </li>
-            <li>
+            </div>
+            <div class="card">
+              <img
+                src="images/rabbit-variant-outline.svg"
+                alt="rabbit Profile Picture"
+              />
               <p>@alex</p>
               <p>No Traffic Maker</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

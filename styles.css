@@ -5,9 +5,186 @@
   font-style: normal;
 }
 
+:root {
+  --content-font: "Funnel Sans";
+  --header-font: "Sour Gummy";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.header {
+  height: 70px;
+  grid-column: 2 / -1;
+  background-color: #a6783f;
+}
+
+.sidebar {
+  display: grid;
+  grid-row: 1 / 3;
+  background-color: #142624;
+  justify-items: center;
+  grid-template-rows: auto 1fr;
+  > h1 {
+    color: white;
+    font-family: var(--header-font);
+    margin-bottom: 20px;
+  }
+  > ul {
+    display: grid;
+    color: white;
+    font-family: var(--header-font);
+    list-style: none;
+    grid-template-rows: repeat(auto-fit, minmax(0, min-content));
+    gap: 20px;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 40px;
+  padding: 20px 100px;
+  background-color: #e4c7afc2;
+  row-gap: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-row: 1 / -1;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 25px;
+}
+
+.projects h1,
+.annoucments h1,
+.trending h1 {
+  grid-column: 1 / -1;
+  font-family: var(--header-font);
+  font-size: 2rem;
+}
+
+.annoucments,
+.trending {
+  display: grid;
+  grid-template-rows: 60px;
+  max-height: 500px;
+}
+
+.annoucments-card,
+.trending-card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.annoucment-card,
+.project-cards > .card {
+  > h2 {
+    font-family: var(--header-font);
+    margin-bottom: 5px;
+  }
+  > p {
+    font-family: var(--content-font);
+    color: #a69886;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.project-cards > .card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px;
+  border-left: 0.5rem solid #bf4f26;
+  > h2 {
+    font-size: 1.2rem;
+  }
+  > p {
+    font-size: 1rem;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+  }
+}
+.annoucment-card {
+  margin-bottom: 20px;
+  &:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #bf4f26;
+  }
+  > h2 {
+    font-size: 1.1rem;
+  }
+  > p {
+    font-size: 1rem;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    max-inline-size: 60ch;
+  }
+}
+
+.trending-card .card {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.info {
+  align-self: center;
+}
+img {
+  margin-left: 5px;
+  grid-row: 1/3;
+  width: 50px;
+  padding: 5px;
+  border-radius: 100%;
+  &[src*="cat"] {
+    background-color: #8c1127;
+  }
+  &[src*="basketball"] {
+    background-color: #a68e80;
+  }
+  &[src*="unicorn"] {
+    background-color: #592418;
+  }
+  &[src*="rabbit"] {
+    background-color: #385248;
+  }
+}
+
+/* prettier-ignore  */
 @font-face {
   font-family: "Sour Gummy";
-  src: url(fonts/SourGummy-VariableFont_wdth\wght.ttf);
+  src: url(fonts/SourGummy-VariableFont_wdth,wght.ttf);
   font-weight: normal;
   font-style: normal;
 }
