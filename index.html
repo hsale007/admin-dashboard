@@ -10,10 +10,41 @@
     <div class="dashboard">
       <header class="header">
         <div class="nav-bar">
-          <label for="search_dash"><span>icon</span></label>
-          <input type="search" name="search_dash" id="search_dash" />
+          <div class="search-bar">
+            <label for="search_dash"
+              ><span
+                ><img
+                  class="search-icon"
+                  src="images/search-icon.svg"
+                  alt="Search" /></span
+            ></label>
+            <input
+              type="search"
+              name="search_dash"
+              id="search_dash"
+              placeholder="Search here..."
+            />
+          </div>
+          <div class="user-info">
+            <img src="images/notifications.svg" alt="Notifications Active" />
+            <img src="images/koala.svg" alt="Koala Profile Icon" />
+            <h2>hsale007</h2>
+          </div>
         </div>
-        <div class="user"></div>
+        <div class="nav-bar bottom">
+          <div class="user">
+            <img src="images/koala.svg" alt="Koala Profile Icon" />
+            <div class="user-info">
+              <p>Hi there,</p>
+              <h2>hsale007 (@hsale007)</h2>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
       </header>
       <div class="sidebar">
         <h1>Dashboard</h1>
@@ -193,10 +224,8 @@
                 src="images/basketball.svg"
                 alt="Basketball Profile Picture"
               />
-              <div class="info">
-                <p>@morgan</p>
-                <p>Super Cool Project</p>
-              </div>
+              <p>@morgan</p>
+              <p>Super Cool Project</p>
             </div>
             <div class="card">
               <img src="images/unicorn.svg" alt="unicorn Profile Picture" />
